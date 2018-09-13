@@ -16,7 +16,7 @@ package main
 
 import (
 	"davsk.net/gbase/pkg/nothing"
-	"davsk.net/gbase/pkg/svc/gameserver"
+	"davsk.net/web-server/pkg/webserver"
 	"github.com/goinggo/tracelog"
 )
 
