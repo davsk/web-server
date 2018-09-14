@@ -11,19 +11,37 @@
 // Simple Web Server
 package webserver
 
-import "net/http"
+import (
+	"github.com/goinggo/tracelog"
+	"net/http"
+)
+
+// const Title for tracelog
+const traceTitle = "webserver"
 
 func Start() (err error) {
+	// const FunctionName for tracelog.
+	const traceFunctionName = "Start"
+	tracelog.Started(traceTitle, traceFunctionName)
+
 	http.Handle("/", http.FileServer(http.Dir("./")))
 	http.HandleFunc("/ping", ping)
 	err = http.ListenAndServe(":8080", nil)
+
+	// Completed.
+	if err == nil {
+		tracelog.Completed(traceTitle, traceFunctionName)
+	} else {
+		tracelog.CompletedError(err, traceTitle, traceFunctionName)
+	}
+
 	return err
 }
 
 func MustStart() {
 	if err := Start(); err != nil {
 		panic(err)
-    }
+	}
 }
 
 func ping(w http.ResponseWriter, r *http.Request) {
