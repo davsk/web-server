@@ -1,0 +1,5 @@
+davsk.net/gbase v0.0.0-alpha h1:Qjg2HoHVe7/7CgaN0AFMoQ7S9+0kX3ZFvbkLnssdjBI=
+davsk.net/web-server v0.1.2-Alpha h1:Oir5FurKkVWRagmcVqONnrMXp3p6JT3N49Kigie+6zQ=
+davsk.net/web-server v0.1.2-Alpha/go.mod h1:ASq9QNrA8lPedOEujTKYgkHcfDMsm3ByISZLx5uiL/g=
+github.com/goinggo/tracelog v0.0.0-20180821171753-c71e233f94bd h1:PBcWFX0t6uJ89PaLFg/n7vo9ZAhgPvPAU6Z7ENxQEdE=
+github.com/goinggo/tracelog v0.0.0-20180821171753-c71e233f94bd/go.mod h1:CpSk8+6vnROzpDixGLhwuDFycS2/AGbyDnv6TLkF4QE=
